@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptopshop.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    header {
+        display: block;
+        padding: 30px;
+        background-color: gray;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        width: 100%;
+    }
+
+    body {
+        background-color: rgb(46, 206, 212);
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+.root>li{
+    list-style: none;
+    float: left;
+    position: relative;
+    display: block;
+}
+.root>li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px 0px 15px;
+    line-height: 50px;
+    display: block;
+}
+.menu1{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(84, 83, 83);
+    margin: -1px 0;
+    font-size: 15px;
+}
+
+.root>li>a:hover
+{background-color: yellowgreen;
+color: rgb(248, 247, 244);
+transform: ease-in 0.35s;}
+.submenu{
+    width: 250px;
+    background-color: #0babd3;
+    min-height: 80px;
+    display: none;
+    position: absolute;
+}
+.submenu li{list-style: none;}
+.submenu li a{
+    text-transform: none;
+    text-decoration: none;
+    color: snow;
+    display: block;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    text-indent: 12px;
+}
+ .root>li:hover .submenu{
+    display: block;
+    background-color: #0babd3;
+    color: palevioletred;
+    transform: ease-in 0.35s;
+}
+.submenu>li>a:hover{
+    background-color: yellowgreen;
+    color: white;
+    transform: ease-in 0.35s;
+}
+
+#banner {
+    background-image: url("nen.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 12em 0;
+    
+}
+
+/* ft css */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.footer-info {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* ảnh trong main */
+
+.section {
+        margin-bottom: 50px;
+        margin: 0 0 20px;
+        text-align: center;
+     
+     }
+
+.section p{text-align: center;}
+
+.products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+
+.product {width: calc(33.33%-20px);
+    margin-bottom: 50px;
+text-align: center;
+}
+
+.product h3 {
+    margin: 0;
+}
+.product p {
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.product button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.section h2 {
+        margin: 0 0 20px;
+        text-align: left;
+     }
+
+     .section h3 {
+        margin: 0 0 20px;
+        text-align: center;
+     }
+
+     .section h3 a {
+        text-decoration: none;
+        color: black;
+
+     }
+    
+     .product a:hover{
+    color:blue;
+}
+
+     main {
+        padding: 50px;  
+     }
+
+     .section1 {
+        margin-bottom: 50px;
+        margin: 0 0 20px;
+        text-align: center;
+     
+     }
+
+.section1 p{text-align: center;}
+
+.products1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+
+.product1 {width: calc(33.33%-20px);
+    margin-bottom: 50px;
+text-align: center;
+}
+
+.product1 h3 {
+    margin: 0;
+}
+.product1 p {
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.product1 button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.section1 h2 {
+        margin: 0 0 20px;
+        text-align: left;
+     }
+
+     .section1 h3 {
+        margin: 0 0 20px;
+        text-align: center;
+     }
+
+     .section1 h3 a {
+        text-decoration: none;
+        color: black;
+
+     }
+
+     .product1 a:hover{
+    color:blue;
+}
+     .section2 {
+        margin-bottom: 50px;
+        margin: 0 0 20px;
+        text-align: center;
+     
+     }
+
+.section2 p{text-align: center;}
+
+.products2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+
+.product2 {width: calc(33.33%-20px);
+    margin-bottom: 50px;
+text-align: center;
+}
+
+.product2 h3 {
+    margin: 0;
+}
+.product2 p {
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.product2 button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.section2 h2 {
+        margin: 0 0 20px;
+        text-align: left;
+     }
+
+     .section2 h3 {
+        margin: 0 0 20px;
+        text-align: center;
+     }
+
+     .section2 h3 a {
+        text-decoration: none;
+        color: black;
+
+     }
+     
+     .section3 {
+        text-align: center;
+     }
+     .section3 button {
+        cursor: pointer;
+     }
+     .product2 a:hover{
+    color:blue;
+    }
+
+    .product img {
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    .product1 img {
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    .product2 img {
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .kt {
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color: rgb(69, 48, 48);
+    padding: 20px;
+  }
+
+.checkbox {
+    margin-top: 10px;
+}
+   /* CSS cho thanh tìm kiếm */
+   .search-container {
+      display: flex;
+      justify-content: center;
+      margin-left: 300px;
+      margin-top: -30px;
+      width: 340px;
+      height: 45px;
+
+    }
+    
+    .search-input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+    
+    .search-button {
+      padding: 8px 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+</style>
+<body>
+    <header>
+        <h1>LaptopShop</h1>
+        
+  <div class="search-container">
+    <input type="text" placeholder="Nhập từ khóa tìm kiếm" class="search-input" list="items">
+    <datalist id="items">
+        <option value="HP">HP</option>
+        <option value="Dell">Dell</option>
+        <option value="MacBook">MacBook</option>
+        <option value="Acer">Acer</option>
+        <option value="Asus">Asus</option>
+        <option value="Lenovo">Lenovo</option>
+        <option value="MSI">MSI</option>
+        <option value="">...</option>
+
+    </datalist>
+    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+    <nav>
+          <div class="menu1">
+            <div class="menu">  
+                <ul class="root">   
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="sanpham.html">Sản phẩm</a></li>
+                    <li><a href="dangnhap.html">Đăng nhập</a></li>
+                    <li><a href="dangky.html">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+        <section id="banner">
+            <br><br><br>
+        </section>
+    </div>
+    </nav>
+    <main>
+        <section class="section">
+            <h2>SẢN PHẨM MỚI</h2>
+            <div class="products">
+                <div class="product">
+                    <a href="mac.html">
+                            <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/6/7/637901915720184032_macbook-air-m2-2022-den-dd.jpg" alt="sp1">
+                    </a>
+                    <h3>
+                        <a href="">MacBook Air 13 inch M2 2022<br> 8CPU 8GPU 8GB/256GB</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">26.190.000VND </b><s style="font-size:10px">29.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <a href="sp2.html">
+                    <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/8/14/638276286417953502_asus-vivobook-m3504ya-den-dd.jpg" alt="sp2">
+                   </a> 
+                   <h3>
+                        <a href="#">Laptop Asus Vivobook M3504YA- <br>L1268W R5 7530U/16GB/512GB</a> 
+                    </h3>
+                    <p>Giá: <b style="color:red">15.000.000VND</b> <s style="font-size:10px">18.000.000VND</s></p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <a href="sp3.html">
+                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/7/637822539982260044_acer-aspire-3-a315-58-bac-dd.jpg" alt="sp3">    
+                    </a>
+                <h3>
+                    <a href="#">Acer Aspire 5 A515-58P-56RP<br> i5 1335U/16GB/512GB</a>
+                </h3>
+                    <p>Giá: <b style="color:red">10.000.000VND</b> <s style="font-size:10px">13.000.000VND</s></p>
+                    <button>Mua ngay</button>            
+                </div>
+            </div>
+                </section>
+
+            <section class="section1">
+                <h2>SẢN PHẨM HOT</h2>
+                <div class="products1">
+                    <div class="product1">
+                        <a href="sp4.html">
+                            <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/12/638327196519727914_msi-gaming-gf63-12uc-den-dd.jpg" alt="sp4">
+                    </a>
+                    <h3>
+                        <a href="">Laptop MSI Gaming GF63 Thin <br>12UC-1006VN i5 12450H</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">13.190.000VND </b><s style="font-size:10px">14.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+
+                    <div class="product1">
+                        <a href="sp5.html">
+                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/11/12/637407970062806725_mba-2020-gold-dd.png" alt="sp5">
+                    </a>
+                    <h3>
+                        <a href="">MacBook Air 13 inch M1 2020 <br>8CPU 7GPU 8GB/256GB</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">18.090.000VND </b><s style="font-size:10px">22.000.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+
+                    <div class="product1">
+                        <a href="sp6.html">
+                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/6/6/638216321887898902_macbook-air-m2-2023-15-inch-bac-dd.jpg" alt="sp6">
+                    </a>
+                    <h3>
+                        <a href="">MacBook Air 15 inch M2 2023 <br>8CPU 10GPU 8GB/256GB</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">29.190.000VND </b><s style="font-size:10px">32.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section2">
+                <h2>SẢN PHẨM BÁN CHẠY</h2>
+                <div class="products2">
+                    <div class="product2">
+                        <a href="sp7.html">
+                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/7/4/638240754748140607_asus-tuf-gaming-fx507-xam-dd.jpg" alt="sp7">    
+                        </a>
+                    <h3>
+                        <a href="">Laptop Asus TUF Gaming <br>FX507ZC4-HN095W i5 12500H</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">13.190.000VND </b><s style="font-size:10px">14.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+
+                    <div class="product2">
+                        <a href="sp8.html">
+                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/7/19/638253822594354727_huawei-bom-wfp9i-matebook-d15-r7-5700u-bac-dd.jpg" alt="sp8">    
+                        </a>
+                    <h3>
+                        <a href="">Laptop Huawei MateBook<br> D15R7 57 00U/8GB/512GB</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">18.090.000VND </b><s style="font-size:10px">19.000.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+
+                    <div class="product2">
+                        <a href="sp9.html">
+                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/4/11/638168337649091937_lenovo-ideapad-3-15itl6-i5-1155g7-xam-dd.jpg" alt="sp9">    
+                        </a>
+                    <h3>
+                        <a href="">Laptop Lenovo IdeaPad 3<br> 15ITL6 i5 1155G7/16GB/512GB</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">17.000.000VND </b><s style="font-size:10px">18.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section1">
+                <h2>CÁC DÒNG LAPTOP NỔI BẬT</h2>
+                <div class="products1">
+                    <div class="product1">
+                        <a href="sp10.html">
+                            <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/12/638327196519727914_msi-gaming-gf63-12uc-den-dd.jpg" alt="sp4">
+                    </a>
+                    <h3>
+                        <a href="">Laptop MSI Gaming GF63 Thin <br>12UC-1006VN i5 12450H</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">13.190.000VND </b><s style="font-size:10px">14.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+
+                    <div class="product1">
+                        <a href="sp11.html">
+                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/6/15/638224358325167577_gigabyte-gaming-a5-k1-den-dd.jpg" alt="sp5">
+                    </a>
+                    <h3>
+                        <a href="">Gigabyte Gaming A5 K1-AVN1030SB<br> 5600H /8GB/512GB/15.6"FHD/Nvidia</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">18.090.000VND </b><s style="font-size:10px">22.000.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+
+                    <div class="product1">
+                        <a href="sp12.html">
+                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/5/5/638188828261523251_gigabyte-gaming-g5-kf-e3vn313sh-i5-12500h-den-dd.jpg" alt="sp6">
+                    </a>
+                    <h3>
+                        <a href="">Laptop Gigabyte Gaming G5 <br>KF-E3VN313SH i5 12500H/16GB/<br>512GB/15.6"FHD/RTX4060 8GB</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">23.000.000VND </b><s style="font-size:10px">26.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+                </div>
+
+                <div class="products1">
+                    <div class="product1">
+                        <a href="sp13.html">
+                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/7/4/638240754748140607_asus-tuf-gaming-fx507-xam-dd.jpg">    
+                        </a>
+                    <h3>
+                        <a href="">Asus TUF Gaming FX507ZC4-<br>HN095W i5 12500H/16GB/512GB<br>/15.6"/Nvidia RTX 3050 4GB</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">19.190.000VND </b><s style="font-size:10px">24.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+
+                    <div class="product1">
+                        <a href="sp14.html">
+                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/6/6/638216639882650079_acer-aspire-7-gaming-a715-76-den-dd.jpg">    
+                        </a>
+                    <h3>
+                        <a href="">Acer Aspire 7 Gaming A715-76-57CY <br>i5 12450H/8GB/512GB/15.6""FHD/<br>win11</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">12.090.000VND </b><s style="font-size:10px">16.000.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+
+                    <div class="product1">
+                        <a href="sp15.html">
+                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/9/14/638302841092557960_lenovo-ideapad-1-15alc7-r5-5500u-dd.jpg">    
+                        </a>
+                    <h3>
+                        <a href="">Laptop Lenovo IdeaPad <br>3 14IAH8 i5 12450H/<br>16GB/512GB/14"FHD/Win11</a>
+                    </h3> 
+                    <p>
+                        Giá: <b style="color:red">23.000.000VND </b><s style="font-size:10px">26.900.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="kt">
+                    <h2>Đánh giá và nhận xét về sản phẩm | Chính hãng Việt Nam </h2><br>
+                    <p>Bạn thấy các sản phẩm này thế nào ?</p>
+                   <p style="margin-top: 10px">Đánh giá ngay</p>
+                </div>
+                <form id="commentForm">
+                    <input type="text" id="nameInput" placeholder="Nhập tên của bạn"><br>
+                    <textarea id="contentInput" placeholder="Nhập nội dung bình luận"></textarea><br>
+                    <button type="submit">Gửi bình luận</button>
+                  </form>
+                
+                  <div id="commentSection"></div>
+                
+                  <script>
+                    document.getElementById("commentForm").addEventListener("submit", function(event) {
+                      event.preventDefault();
+                      
+                      var name = document.getElementById("nameInput").value;
+                      var content = document.getElementById("contentInput").value;
+                      var timestamp = new Date().toLocaleString();
+                      
+                      var commentElement = document.createElement("div");
+                      commentElement.className = "comment";
+                      
+                      var nameElement = document.createElement("div");
+                      nameElement.className = "name";
+                      nameElement.textContent = name;
+                      
+                      var timestampElement = document.createElement("div");
+                      timestampElement.className = "timestamp";
+                      timestampElement.textContent = timestamp;
+                      
+                      var contentElement = document.createElement("div");
+                      contentElement.textContent = content;
+                      
+                      commentElement.appendChild(nameElement);
+                      commentElement.appendChild(timestampElement);
+                      commentElement.appendChild(contentElement);
+                      
+                      document.getElementById("commentSection").appendChild(commentElement);
+                      
+                      document.getElementById("nameInput").value = "";
+                      document.getElementById("contentInput").value = "";
+                    });
+                  </script>
+            </section>
+    </main>
+    <article>
+        
+    </article>
+    <footer>
+        <div class="container">
+          <div class="footer-links">
+            <h2 class="content">Liên hệ</h2>
+            <p><i class="fa-solid fa-envelope"></i> laptopshop@email.com<br>
+                <i class="fa-solid fa-phone"></i> 1900 5555<br>
+                 <i class="fa-solid fa-location-dot"></i> Thanh Xuân, Hà Nội
+            </p>
+
+          <div>
+            <h2 class="content3">Dịch vụ</h2>
+            <p>
+                Ưu đãi thanh toán.<br>
+                Chính sách Bảo hành.<br>
+                Liên hệ hợp tác kinh doanh.<br>
+                Dịch vụ bảo hành mở rộng.</p>
+          </div>
+          <div class="footer-info">
+            <p>© 2024 LaptopShop. </p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

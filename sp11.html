@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    header {
+        display: block;
+        padding: 30px;
+        background-color: gray;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        width: 100%;
+    }
+    body {
+       background-color: white;
+       background-image: url('bgr1.jpg');
+       background-size: cover;
+       background-repeat:no-repeat;
+
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+.root>li{
+    list-style: none;
+    float: left;
+    position: relative;
+    display: block;
+}
+.root>li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px 0px 15px;
+    line-height: 50px;
+    display: block;
+}
+.menu1{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(84, 83, 83);
+    margin: -1px 0;
+    font-size: 15px;
+}
+
+.root>li>a:hover
+{background-color: yellowgreen;
+color: rgb(248, 247, 244);
+transform: ease-in 0.35s;}
+.submenu{
+    width: 250px;
+    background-color: #0babd3;
+    min-height: 80px;
+    display: none;
+    position: absolute;
+}
+.submenu li{list-style: none;}
+.submenu li a{
+    text-transform: none;
+    text-decoration: none;
+    color: snow;
+    display: block;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    text-indent: 12px;
+}
+ .root>li:hover .submenu{
+    display: block;
+    background-color: #0babd3;
+    color: palevioletred;
+    transform: ease-in 0.35s;
+}
+.submenu>li>a:hover{
+    background-color: yellowgreen;
+    color: white;
+    transform: ease-in 0.35s;
+}
+
+.i1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ft css */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.footer-info {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* ảnh trong main */
+
+.section {
+        margin-bottom: 50px;
+        margin: 0 0 20px;
+        text-align: center;
+     
+     }
+
+.section p{text-align: center;}
+
+.products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+
+.product {width: calc(33.33%-20px);
+    margin-bottom: 50px;
+text-align: center;
+}
+
+.product h3 {
+    margin: 0;
+}
+.product p {
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.product button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer
+}
+.product img {
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.section h2 {
+        margin: 0 0 20px;
+        text-align: left;
+     }
+
+     .section h3 {
+        margin: 0 0 20px;
+        text-align: center;
+     }
+
+     .section h3 a {
+        text-decoration: none;
+        color: white;
+     }
+
+     main {
+        padding: 50px;  
+     }
+      
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        
+      }
+
+      tr, td{
+         border: 1px solid white;
+         color: white;
+         padding: 8px;
+         text-align: left;
+      }
+     .bang {
+        margin: -90px 0px;
+        color: white;
+     }
+     .bang1 {
+        margin: 20px;
+     }
+     .gts {
+        text-align: left;
+        color: white;
+     }
+     .gt {
+        margin: 25px;
+     }
+</style>
+<body>
+    <header>
+        <h1>LaptopShop</h1>
+    </header>
+    <nav>
+          <div class="menu1">
+            <div class="menu">  
+                <ul class="root">   
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="sanpham.html">Sản phẩm</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h2 class="lop1" style="color:white;">DÒNG SẢN PHẨM</h2>
+        <p style="text-align: left; margin: 15px 0; color:white">Gigabyte Gaming A5 K1-AVN1030SB R5</p>
+        <section class="section">
+            <div class="products">
+                <div class="product">
+                    <div class="gts">
+                        <h2>Giới thiệu sản phẩm</h2>
+                        <ul class="gt">
+                            <li>P/N: A5 K1-AVN1030SB</li> 
+            
+                            <li>Thương hiệu:  Gigabyte</li>
+                           
+                            <li>Xuất xứ:  Trung Quốc</li>
+                            
+                            <li>Thời điểm ra mắt:  2022</li>
+                             
+                            <li>Thời gian bảo hành (tháng):  24</li>
+                           
+                            <li>Hướng dẫn bảo quản:  Để nơi khô ráo, nhẹ tay, dễ vỡ.</li>
+                            
+                            <li>Hướng dẫn sử dụng:  Xem trong sách hướng dẫn sử dụng </li>
+                        </ul>
+                        
+                        </div>
+                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/6/15/638224358325167577_gigabyte-gaming-a5-k1-den-dd.jpg" alt="sp5">
+                    </a>
+                    <p style="color: white;">Giá:
+                         <b style="color:rgb(250, 12, 12)">18.090.000VND </b><s style="font-size:10px; color:white">22.000.000VND</s>
+                    </p>
+                    <button>Mua ngay</button>
+                    <button>Trả góp 0%</button>
+                </div>
+        
+                <div class="bang">
+                    <h3>Đặc điểm nổi bật của Gigabyte Gaming A5 K1-AVN1030SB R5
+                </h3>
+                <table class="bang1">
+                    <tr>
+                        <td>Màn hình</td>
+                        <td>15.6 inch, 1920 x 1080 Pixels, IPS, 144 Hz, Anti - Glare</td>
+                    </tr>
+                    <tr>
+                        <td>CPU</td>
+                        <td>AMD, Ryzen 5, 5600H</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>8 GB (1 thanh 8 GB), DDR4, 3200</td>
+                    </tr>
+                    <tr>
+                        <td>Đồ họa</td>
+                        <td>NVIDIA GeForce RTX 3060 6GB; AMD Radeon RX Graphics Vega 7</td>
+                    </tr>
+                    <tr>
+                        <td>Hệ điều hành</td>
+                        <td>Windows 11 Home</td>
+                    </tr>
+                    <tr>
+                        <td>Trọng lượng</td>
+                        <td>2.12 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước</td>
+                        <td>361 x 258 x 25.3 mm</td>
+                    </tr>
+                    <tr>
+                        <td>Xuất xứ</td>
+                        <td>Trung Quốc</td>
+                    </tr>
+                    <tr>
+                        <td>Năm ra mắt</td>
+                        <td>2022</td>
+                    </tr>
+                </table>
+            </div>
+                </section>
+
+    </main>
+    <article>
+        
+    </article>
+    <footer>
+        <div class="container">
+          <div class="footer-links">
+            <h2 class="content">Liên hệ</h2>
+            <p><i class="fa-solid fa-envelope"></i> laptopshop@email.com<br>
+                <i class="fa-solid fa-phone"></i> 1900 5555<br>
+                 <i class="fa-solid fa-location-dot"></i> Thanh Xuân, Hà Nội
+            </p>
+
+          <div>
+            <h2 class="content3">Dịch vụ</h2>
+            <p>
+                Ưu đãi thanh toán.<br>
+                Chính sách Bảo hành.<br>
+                Liên hệ hợp tác kinh doanh.<br>
+                Dịch vụ bảo hành mở rộng.</p>
+          </div>
+          <div class="footer-info">
+            <p>© 2024 LaptopShop. </p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
